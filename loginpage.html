@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<head>
+    <title>Hotel Booking</title>
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color:11lightcoral; */
+}
+
+header {
+    background-color: #1b1366;
+    color: rgb(255,215,150);
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    height: 100px;
+    align-content: baseline;
+    /* justify-content: space-between; */
+    gap: 2em;
+}
+
+nav {
+    background-color: #f820e2;
+    /* color: #f68e06; */
+    /* text-align:; */
+    padding: 15px;
+}
+
+nav ul {
+    color: #f68e06;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.footer1{
+    display: flex;  
+}
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+.hotel-name{
+    align-self: center;
+    font-size: larger;
+    flex-grow: 1;
+    text-align: left;
+}
+.logo{
+            align-content: left;
+            display: inline-block;
+            padding-left: 5%;
+            /* position: absolute;
+            top: 0px;
+            left:40px; */
+        }
+.inr{
+    display: flex;
+    position: absolute;
+    top: -5px;
+    right: 230px;
+}
+.div2{
+    display:inline-block;
+    width: 30%;
+    text-align: justify;
+    
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.login-btn {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+.social-login {
+    margin-top: 20px;
+}
+
+.social-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.social-btn.google {
+    background-color: #DD4B39;
+    color: #fff;
+    text-decoration: none;
+} 
+
+.social-btn.facebook {
+    background-color: #3B5998;
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-btn.apple {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Center the social media buttons */
+.social-btn {
+    text-align: center;
+}
+.tnc{
+    display: flex; 
+    align-items: left;
+
+}
+.inp{
+    display: inline-block;
+    /* height: ; */
+    width: 20px;
+
+}
+.inp-text{
+    padding-left: 8px;
+    display: inline-block;
+    height: 0px;
+}
+.fornm{
+    padding-left: 0px;
+    align-content: center;
+    background-color: grey;
+    width: 30em;
+
+    border-radius: 10px;
+    background-color: lightblue;
+    /* padding: 0px,20px,0px,20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    height: 700px;
+    /* width: 110%; */
+}
+.input-container{
+    width: 56vh;
+}
+.login-container{
+    /* background-color: lightcoral; */
+    /* border: 0px; */
+    /* width: 30%; */
+    display: flex;
+    flex-direction: column;
+    padding-left:400px ;
+    /* border-radius: 10px; */
+}
+.newsletter{
+    display:inline-block;
+    /* width: 19%; */
+    text-align: justify;
+    justify-content: space-between;
+}
+</style>
+<body>
+    
+    <header>
+        <div class="logo">
+            <img src="Logo-removebg-preview.png" height="100em" width="80em">
+            </div>
+            <div class="hotel-name">
+        <h1>HOTEL EMBLEM</h1></div> 
+        <div>
+            <h3 class="inr" style="font-size: 1.5em;">INR</h3></div>
+            <div><img src="download-removebg-preview.png" alt="india" height="30em" width="30em"></div>
+           <div > <button class="">Register</button>
+            <button class="">Login</button></div>
+        </div>
+        
+         
+    </header>
+   <nav>
+        <ul>
+            <li><a href="Hotel.html">Home</a></li>
+            <li><a href="#">Rooms</a></li>
+            <li><a href="/Aboutus.html">About</a></li>
+            <li><a href="/customer support.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- <div class="fornm"> -->
+
+    <!-- </div> -->
+    <center><h1>Welcome Back!</h1></center>
+    <div class="login-container">
+       
+        <div class="fornm">
+            
+        <form>
+            <div class="input-container">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-container">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="tnc">
+                <input type="checkbox" required class="inp"><p class="inp-text">I agree with the <a href="/Term and condition.html">T&C</a>.</p>
+            </div>
+            <a class="forgot-password" href="forgot.html">Forgot Password?</a>
+            <button class="login-btn" type="submit">Login</button>
+        </form>
+    
+        <div class="social-login">
+            <h5>You Don't Have An Account?<a href="#">Join Us Now</a></h5>
+            <p>Or continue with</p>
+            <a style="text-decoration: none; color:white" href="https://accounts.google.com/v3/signin/identifier?hl=en-GB&ifkv=AVQVeyy9WYNmAM6cKpILr0um93lSSYukRm2hd4l8Q9I9kp2YBjBVD6lZSH5kTj2B2rdbQX4J7FmM&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-2096315938%3A1698147490001021&theme=glif"> <button class="social-btn google">Continue with Google</a></button>
+            <a style="text-decoration: none; color:white" href="https://www.facebook.com/"><button class="social-btn facebook">Continue with Facebook</a></button>
+            <a style="text-decoration: none; color:white" href="https://www.icloud.com/"><button class="social-btn apple">Continue with Apple</a></button>
+        </div>
+    </div></div>
+
+    <section class="footer1"> 
+        <div class="div2"> <h1>OUR PRODUCT</h1>
+         <a style="text-decoration: none;" href="Room.html">Domestic Hotel</a><br>
+         <a style="text-decoration: none;" href="Room.html">Restaurant</a><br>
+         <a style="text-decoration: none;" href="Room.html">Gym</a>
+        </div>
+         <div class="div2"> <h1>COMPANY</h1>
+             <ul><a style="text-decoration: none;" href="/Hotel.html">Home</li><br>
+             <a style="text-decoration: none;" href="Aboutus.html">About us</a><br>
+             <a style="text-decoration: none;"href="Term and condition.html">Term & Conditions</a><br>
+             <a style="text-decoration: none;" href="useragreenment.html">User Agreement</a><br>
+             <a style="text-decoration: none;"href="customer support.html">Customer Support</a></ul>
+            </div>
+             <div class="div2"> <h1>JOIN US</h1>
+                <a href="https://www.instagram.com/" class="p1"><img src="Instagram_logo_2016.svg.webp" width="30px" height="30px"></a>
+                <a href="https://www.facebook.com/"><img src="Facebook.png" width="30px" height="30px"></a>
+                <a href="https://www.linkedin.com/"><img src="linkedin.png" width="30px" height="30px"></a>
+                <a href="https://twitter.com/"><img src="twitter.png" width="30px" height="30px"></a><br><br>
+                <div class="newsletter">
+                <input type="email" placeholder="NewsLetter*" id="guests" required>
+                    <button type="submit">Subscribe</button></div>
+            </div>
+            <div class="div3"><h1>CITY</h1>
+                <ul>
+                    <li>New Delhi</li>
+                    <li>Kolkata</li>
+                    <li>Mumbai</li>
+                    <li>Patna</li>
+                    <li>Jalandhar</li>
+                </ul>
+
+            </div>
+            <div class="div2">
+                <img src="map img.png" width="200em" height="150em">
+            </div>
+     </section>
+    <section class="footer"> &copy; HOTEL EMBLEM 2023 (RAJAN KUMAR)
+</section>
+</body>
+</html>

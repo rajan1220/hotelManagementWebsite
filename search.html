@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hotel Booking Form</title>
+	<style>
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+		}
+
+		input[type=text], input[type=date], select {
+			padding: 10px;
+			margin: 10px;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 0 0 5px #ccc;
+			width: 300px;
+		}
+
+		input[type=submit] {
+			background-color: blue;
+			color: white;
+			padding: 10px 20px;
+			border-radius: 5px;
+			border: none;
+			cursor: pointer;
+		}
+
+		input[type=submit]:hover {
+			background-color: darkblue;
+		}
+	</style>
+</head>
+<body>
+
+    <section id="booking">
+        <h2>Book a Room</h2>
+        <form id="booking-form">
+	<div><label for="location">Location:</label>
+	<input type="text" id="location" name="location" value="New Delhi"></div>
+
+	<div><label for="checkin">Check-in date:</label>
+	<input type="date" id="checkin" name="checkin"></div>
+
+	<div><label for="checkout">Check-out date:</label>
+	<input type="date" id="checkout" name="checkout"></div>
+
+	<label for="guests">Number of guests and rooms:</label>
+	<select id="guests" name="guests">
+	  <option value="2 adults - 0 children - 1 room">2 adults - 0 children - 1 room</option>
+	  <option value="2 adults - 1 child - 1 room">2 adults - 1 child - 1 room</option>
+	  <option value="2 adults - 2 children - 1 room">2 adults - 2 children - 1 room</option>
+	  <option value="3 adults - 0 children - 1 room">3 adults - 0 children - 1 room</option>
+	  <option value="3 adults - 1 child - 1 room">3 adults - 1 child - 1 room</option>
+	  <option value="4 adults - 0 children - 2 rooms">4 adults - 0 children - 2 rooms</option>
+	  <option value="4 adults - 1 child - 2 rooms">4 adults - 1 child - 2 rooms</option>
+	  <option value="4 adults - 2 children - 2 rooms">4 adults - 2 children - 2 rooms</option>
+	  <option value="5 adults or more">5 adults or more</option>
+	</select>
+
+	<input type="submit" value="Search">
+</form>
+</section> 
+</body>
+</html>
