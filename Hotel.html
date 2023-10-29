@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<head>
+    <title>Hotel Booking</title>
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #1b1366;
+    color: rgb(255,215,150);
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    height: 100px;
+    align-content: baseline;
+    /* justify-content: space-between; */
+    gap: 2em;
+}
+
+nav {
+    background-color: #f820e2;
+    /* color: #f68e06; */
+    /* text-align:; */
+    padding: 15px;
+}
+
+nav ul {
+    color: #f68e06;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+nav ul li a{
+    text-decoration: none;
+}
+.nav li a:hover, .nav li a.active{
+        text-decoration: none;
+        color: rgb(10, 245, 34);
+        font-weight: bold;
+        }
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+form label, form input, form button {
+    display: block;
+    margin: 10px;
+}
+
+.room {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    font: 3em;
+    /* width: 20%; */
+    display: inline-block;
+    justify-content: space-evenly;
+}
+
+.book-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.div1{
+    display:inline-block;
+    width: 0%;
+}
+
+#rooms{
+    justify-content: space-between;
+    padding-left: 100px;
+}
+.div2{
+    display:inline-block;
+    width: 30%;
+    
+}
+.footer1{
+    display: flex;
+    
+}
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+.hotel-name{
+    align-self: center;
+    font-size: larger;
+    flex-grow: 1;
+    text-align: left;
+}
+.logo{
+            align-content: left;
+            display: inline-block;
+            padding-left: 5%;
+            /* position: absolute;
+            top: 0px;
+            left:40px; */
+        }
+.inr{
+    display: flex;
+    position: absolute;
+    top: -5px;
+    right: 230px;
+}
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(205, 12, 12, 0.2);
+}
+
+form label, form input, form button {
+    display: block;
+    margin: 10px;
+}
+
+.room {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    font: 3em;
+    /* width: 20%; */
+    display: inline-block;
+    justify-content: space-evenly;
+}
+
+.book-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.div1{
+    display:inline-block;
+    width: 19%;
+    text-align: justify;
+    justify-content: center;
+    text-decoration: none;
+}
+.booking{
+    /* background: scroll; */
+    background-color:rgb(158, 234, 234);
+    /* font-size: 2rem; */
+    padding: 0px;
+    text-align: justify;
+    /* display: inline-block;         */
+    border-radius: 100em;
+    justify-content: center;
+    padding-left:80px;
+    font-size: 1.3rem;
+    
+}
+#rooms{
+    justify-content: space-between;
+    padding-left: 60px;
+}
+
+footer{
+    padding: 0%;
+    justify-content: space-between;
+}
+.footer1{
+    display: flex;
+}
+.div2{
+    display:inline-block;
+    width: 90%; 
+    text-align: justify; 
+     
+}
+.h2{
+    text-align: center;
+}
+.hotel-name{
+    align-self: center;
+    font-size: larger;
+    flex-grow: 1;
+    text-align: left;
+}
+.logo{
+            align-content: left;
+            display: inline-block;
+            padding-left: 5%;
+            /* position: absolute;
+            top: 0px;
+            left:40px; */
+        }
+.offer{
+    /* display: flex;
+    display: inline; */
+    justify-content: space-between;
+    padding-left: 100px;
+  
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    font: 3em;
+    /* width: 20%; */
+    display: inline-block;
+    justify-content: space-evenly;
+}
+
+.newsletter{
+    display:inline-block;
+    /* width: 19%; */
+    text-align: justify;
+    justify-content: center;
+}
+.div3{
+    word-spacing: 1px;
+    line-break: normal;
+    /* display: block; */
+    margin-right: 20px;
+    width: 7em;
+}
+</style>
+<body>
+    
+    <header>
+        <div class="logo">
+            <img src="Logo-removebg-preview.png" height="100em" width="80em">
+            </div>
+            <div class="hotel-name">
+        <h1>HOTEL EMBLEM</h1></div>
+        <div>
+            <h3 class="inr" style="font-size: 1.5em;">INR</h3></div>
+            <div><img src="download-removebg-preview.png" alt="india" height="30em" width="30em"></div>
+           <div><a href="/Signup.html"><button class="book-btn1">Register</button></a>
+            <a href="/loginpage.html"><button class="book-btn1">Login</button></a></div>
+        
+    </header>
+   <nav class="nav">
+        <ul>
+            <li><a href="/Hotel.html" class="active">Home</a></li>
+            <li><a href="Room.html">Rooms</a></li>
+            <li><a href="Aboutus.html">About</a></li>
+            <li><a href="/customer support.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+</style>
+<body>
+
+    <section class="Banner">
+        <div>
+            <img src="Comfort. Luxery.gif" alt="banner" height="180em" width="fit-content"> 
+        </div>
+    </section>
+    
+    <section class="booking">
+        <div><h2 class="h2"><u>Book a Room</h2></u> </div>
+        <form id="booking-form">
+         <div class="div1">   <label for="check-in">Check-In Date</label>
+            <input type="date" id="check-in" required></div>
+         <div class="div1"><label for="check-out">Check-Out Date</label>
+            <input type="date" id="check-out" required></div>
+        <div class="div1">    <label for="Room-type">Select the room</label>
+            <select name="Room-type" id="Room-type" required>
+                <option value="#">Select type of room</option>
+                <option value="01">Single bed AC room</option>
+                <option value="02">Double bed AC room</option>
+                <option value="03">Deluxe Double bed AC room</option>
+                <option value="04">Triple bed AC room</option>
+                <option value="05">Quad bed AC room</option>
+                <option value="06">Queen bed AC room</option>
+                <option value="07">King bed AC room</option>
+                <option value="08">Studio room</option><br>
+                <option value="09">Executive suite room</option>
+                <option value="10">Connecting room</option>
+                <option value="11">Cabana room</option>
+                <option value="12">Smoking room</option>
+                <option value="13">Adjoining romm</option>
+                <option value="14">Executive floored room</option>
+                <option value="15">President suite room</option><br>
+            </select>
+            </div>
+            
+          <div class="div1"><label for="guests">Number of Guests</label>
+            <input type="number" id="guests" required></div>
+            <div class="div1"><label for="room">Number of Room</label>
+                <input type="number" id="room" required></div>
+         <center><div class="div1"><a href="payment.html"> <button type="submit">Book Now</button></a></div></center>
+        </form>
+        
+    </section>
+    <section id="Offer">
+        <CENTER><h2>SEE OFFER HERE</h2></CENTER>
+        <div class="offer">
+            <img src="Red Modern Exclusive Hotel Instagram Story.gif" alt="Room 2" height="500em" width="350em">
+        </div>
+        <div class="offer">
+            <img src="Blue Hotel Promo Poster.png" alt="Room 2" height="500em" width="350em">
+        </div>
+        <div class="offer">
+            <img src="Yellow & Blue Minimalist Hotel Promotion Flyer .png" alt="Room 2" height="500em" width="350em">
+        </div>
+    </section>
+    <section id="room">
+        <CENTER><h2>IMAGE</h2></CENTER>
+        <div class="room">
+            <img src="img.jpg" alt="Room 2" height="300em" width="350em">
+        </div>
+        <div class="room">
+            <img src="img2.jpg" alt="Room 2" height="300em" width="350em">
+        </div>
+        <div class="room">
+            <video src="/HOTEL EMBLEM1.mp4" controls muted autoplay loop height="300em" width="350em"></video>
+        </div>
+        <div class="room">
+            <img src="img4.jpeg" alt="Room 2" height="300em" width="350em">
+        </div>
+        <div class="room">
+            <img src="img3.jpeg" alt="Room 2" height="300em" width="350em">
+        </div>
+        <div class="room">
+            <img src="img6.jpeg" alt="Room 2" height="300em" width="350em">
+        </div>
+    </section>
+    <section class="footer1"> 
+        <div class="div2"> <h1>OUR PRODUCT</h1>
+         <a style="text-decoration: none;" href="Room.html">Domestic Hotel</a><BR>
+         <a style="text-decoration: none;" href="Room.html">Restaurant</a><br>
+         <a style="text-decoration: none;" href="Room.html">Gym</a>
+        </div>
+         <div class="div2"> <h1>COMPANY</h1>
+             <ul><a style="text-decoration: none;" href="/Hotel.html">Home</li><br>
+             <a style="text-decoration: none;" href="Aboutus.html">About us</a><br>
+             <a style="text-decoration: none;"href="Term and condition.html">Term & Conditions</a><br>
+             <a style="text-decoration: none;" href="useragreenment.html">User Agreement</a><br>
+             <a style="text-decoration: none;"href="customer support.html">Customer Support</a></ul>
+            </div>
+             <div class="div2"> <h1>JOIN US</h1>
+                <a href="https://www.instagram.com/" class="p1"><img src="Instagram_logo_2016.svg.webp" width="30px" height="30px"></a>
+                <a href="https://www.facebook.com/"><img src="Facebook.png" width="30px" height="30px"></a>
+                <a href="https://www.linkedin.com/"><img src="linkedin.png" width="30px" height="30px"></a>
+                <a href="https://twitter.com/"><img src="twitter.png" width="30px" height="30px"></a><br><br>
+                <div class="newsletter"><input type="email" placeholder="NewsLetter*" id="guests" required>
+                    <button type="submit">Subscribe</button></div>
+            </div>
+            <div class="div3"><h1>CITY</h1>
+                <ul>
+                    <li>New Delhi</li>
+                    <li>Kolkata</li>
+                    <li>Mumbai</li>
+                    <li>Patna</li>
+                    <li>Jalandhar</li>
+                </ul>
+
+            </div>
+            <div class="div2">
+                <img src="map img.png" width="200em" height="150em">
+            </div>
+     </section>
+     <section class="footer"> &copy; HOTEL EMBLEM 2023 (RAJAN KUMAR)
+</body>
+</html>
